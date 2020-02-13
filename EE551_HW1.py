@@ -96,7 +96,9 @@ def dictionaries():
     p = amazing_grace["jobs"][2]
 
     # Use the sort() function to get sorted keys of amazing_grace in alphabetically ascending order
-    k = sorted(amazing_grace)
+    k = [key for key in amazing_grace.keys()]
+    k.sort()
+    k = k[::-1]
 
     return a, f, p, k
 
